@@ -1,0 +1,1 @@
+package app.utils.resourcesfun getDrawable(res: String): String {	return "drawable/$res.xml"}
