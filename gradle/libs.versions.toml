@@ -18,6 +18,10 @@ junit = "4.13.2"
 voyager = "1.0.0-rc10"
 google-services = "4.4.0"
 firebase-kotlin-sdk = "1.10.4"
+ksp = "1.9.20-1.0.14"
+native-coroutines = "1.0.0-ALPHA-20"
+koin = "3.5.0"
+koin-compose = "1.1.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -36,7 +40,10 @@ androidx-material = { group = "com.google.android.material", name = "material", 
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-koin = { module = "cafe.adriel.voyager:voyager-koin", version.ref = "voyager" }
 firebase-auth = { group = "dev.gitlive", name = "firebase-auth", version.ref = "firebase-kotlin-sdk" }
+koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin-compose = { group = "io.insert-koin", name = "koin-compose", version.ref = "koin-compose" }
 
 [plugins]
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
@@ -44,7 +51,10 @@ androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 google-services = { id = "com.google.gms.google-services", version.ref = "google-services" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+nativeCoroutines = { id = "com.rickclephas.kmp.nativecoroutines", version.ref = "native-coroutines" }
 
 [bundles]
-voyager = [ "voyager-navigator" ]
+voyager = [ "voyager-navigator", "voyager-koin" ]
 firebase = [ "firebase-auth" ]
+koin = [ "koin-core", "koin-compose" ]

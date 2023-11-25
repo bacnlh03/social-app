@@ -1,0 +1,1 @@
+package features.diimport features.auth.di.authModuleimport features.utils.provideDispatcherimport org.koin.dsl.modulefun featuresModule() = listOf(	authModule,	utilsModule)private val utilsModule = module {	factory {		provideDispatcher()	}}

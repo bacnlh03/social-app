@@ -5,6 +5,8 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.google.services)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.nativeCoroutines)
 }
 
 kotlin {
@@ -28,7 +30,9 @@ kotlin {
     }
     
     sourceSets {
-        
+        all {
+            languageSettings.optIn("kotlin.experimental.ExperimentalObjCName")
+        }
         androidMain.dependencies {
             implementation(libs.compose.ui)
             implementation(libs.compose.ui.tooling.preview)
@@ -43,6 +47,7 @@ kotlin {
 
             implementation(libs.bundles.voyager)
             implementation(libs.bundles.firebase)
+            implementation(libs.bundles.koin)
         }
     }
 }

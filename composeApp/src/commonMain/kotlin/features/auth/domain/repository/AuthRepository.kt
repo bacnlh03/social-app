@@ -1,0 +1,1 @@
+package features.auth.domain.repositoryimport com.rickclephas.kmp.nativecoroutines.NativeCoroutinesimport features.auth.domain.model.AuthRequestinterface AuthRepository {	@NativeCoroutines	suspend fun login(request: AuthRequest)}

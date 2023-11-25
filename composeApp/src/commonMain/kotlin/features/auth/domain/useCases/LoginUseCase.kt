@@ -1,0 +1,1 @@
+package features.auth.domain.useCasesimport com.rickclephas.kmp.nativecoroutines.NativeCoroutinesimport features.auth.domain.model.AuthRequestimport features.auth.domain.repository.AuthRepositoryclass LoginUseCase(	private val repository: AuthRepository) {	@NativeCoroutines	suspend operator fun invoke(request: AuthRequest) =		repository.login(request)}
