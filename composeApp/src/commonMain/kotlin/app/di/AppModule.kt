@@ -1,1 +1,1 @@
-package app.diimport app.login.LoginScreenModelimport org.koin.dsl.modulefun appModule() = listOf(	loginModule)private val loginModule = module {	factory {		LoginScreenModel(get())	}}
+package app.diimport app.login.LoginScreenModelimport app.register.RegisterScreenModelimport org.koin.dsl.modulefun appModule() = listOf(	loginModule,	registerModule)private val loginModule = module {	factory {		LoginScreenModel(get())	}}private val registerModule = module {	factory {		RegisterScreenModel(get())	}}
