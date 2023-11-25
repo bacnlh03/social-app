@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.google.services)
     alias(libs.plugins.ksp)
     alias(libs.plugins.nativeCoroutines)
+    alias(libs.plugins.serializable)
 }
 
 kotlin {
@@ -48,6 +49,7 @@ kotlin {
             implementation(libs.bundles.voyager)
             implementation(libs.bundles.firebase)
             implementation(libs.bundles.koin)
+            implementation(libs.kotlinx.serializable.json)
         }
     }
 }

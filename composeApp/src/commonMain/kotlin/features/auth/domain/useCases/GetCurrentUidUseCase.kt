@@ -1,0 +1,1 @@
+package features.auth.domain.useCasesimport com.rickclephas.kmp.nativecoroutines.NativeCoroutinesimport features.auth.domain.repository.AuthRepositoryclass GetCurrentUidUseCase(	private val repository: AuthRepository) {	@NativeCoroutines	suspend operator fun invoke() = repository.getCurrentUid()}

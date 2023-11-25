@@ -1,0 +1,1 @@
+package features.profile.domain.useCasesimport com.rickclephas.kmp.nativecoroutines.NativeCoroutinesimport features.profile.domain.repository.ProfileRepositoryclass GetProfileUseCase(	private val repository: ProfileRepository) {	@NativeCoroutines	suspend operator fun invoke(uid: String) =		repository.getProfile(uid)}

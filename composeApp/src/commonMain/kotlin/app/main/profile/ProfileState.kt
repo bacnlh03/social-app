@@ -1,0 +1,1 @@
+package app.main.profiledata class ProfileState(	val username: String = "",	val avatarUrl: String? = null,	val posts: Int = 0,	val followers: Int = 0,	val following: Int = 0,	val isLoading: Boolean = false,	val isSuccess: Boolean = false,	val errorMessage: String? = null)

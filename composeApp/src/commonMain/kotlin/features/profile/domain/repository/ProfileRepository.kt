@@ -1,0 +1,1 @@
+package features.profile.domain.repositoryimport com.rickclephas.kmp.nativecoroutines.NativeCoroutinesimport features.profile.domain.model.ProfileModelinterface ProfileRepository {	@NativeCoroutines	suspend fun getProfile(uid: String): ProfileModel}

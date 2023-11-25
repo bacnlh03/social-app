@@ -1,0 +1,1 @@
+package features.profile.domain.modelimport kotlinx.serialization.Serializable@Serializabledata class ProfileModel(	val uid: String,	val avatarUrl: String? = null,	val username: String,	val gender: String,	val phoneNumber: String? = null,	val posts: Int = 0,	val followers: Int = 0,	val following: Int = 0)
