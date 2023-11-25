@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.google.services)
 }
 
 kotlin {
@@ -41,6 +42,7 @@ kotlin {
             implementation(compose.components.resources)
 
             implementation(libs.bundles.voyager)
+            implementation(libs.bundles.firebase)
         }
     }
 }
