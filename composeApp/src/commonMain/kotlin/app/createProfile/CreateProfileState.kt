@@ -1,0 +1,1 @@
+package app.createProfiledata class CreateProfileState(	val avatarUrl: String? = null,	val username: String = "",	val gender: Gender = Gender.Female,	val phoneNumber: String? = null,	val isLoading: Boolean = false,	val isSuccess: Boolean = false,	val errorMessage: String? = null)sealed class Gender {	data object Female : Gender()	data object Male : Gender()}
